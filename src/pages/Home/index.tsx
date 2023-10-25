@@ -1,3 +1,9 @@
+import { NavBar } from "../../common/NavBar";
+
 export const Home = () => {
-  return <div></div>;
+  return (
+    <div>
+      <NavBar />
+    </div>
+  );
 };
