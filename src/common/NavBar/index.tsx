@@ -1,14 +1,12 @@
 import { Link } from "../../common/Link";
-import heroUrl from "../../assets/hero-image.jpg";
 import { useNavigate } from "react-router-dom";
 
 export const NavBar = () => {
   const navigate = useNavigate();
-  const backgroundImage = `url(${heroUrl})`;
 
   return (
-    <div className="bg-cover bg-center h-screen" style={{ backgroundImage }}>
-      <div className="flex justify-between px-16 py-8">
+    <div>
+      <div className="hidden md:flex md:justify-between md:px-16 md:py-8">
         <div className="flex space-x-4">
           <Link
             className="text-white text-lg cursor-pointer"
